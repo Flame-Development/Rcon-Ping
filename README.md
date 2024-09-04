@@ -10,6 +10,14 @@ Developed by Mehran1022
 - Handle errors and timeouts gracefully
 - Modular and maintainable code structure
 
+## Installation
+
+To install the package, use npm:
+
+```bash
+npm install rcon-ping
+```
+
 ## Usage
 Here’s an example of how to use the RconPing class:
 
