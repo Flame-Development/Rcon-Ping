@@ -8,15 +8,12 @@
     "lib": "lib",
     "test": "test"
   },
-  "publishConfig": {
-    "@Mehran1022mm:registry": "https://npm.pkg.github.com"
-  },
   "scripts": {
     "test": "mocha"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Mehran1022mm/Rcon-Ping.git"
+    "url": "git+https://github.com/Flame-Development/Rcon-Ping.git"
   },
   "keywords": [
     "minecraft",
