@@ -5,11 +5,7 @@
   "main": "index.js",
   "directories": {
     "example": "examples",
-    "lib": "lib",
-    "test": "test"
-  },
-  "scripts": {
-    "test": "mocha"
+    "lib": "lib"
   },
   "repository": {
     "type": "git",
@@ -22,9 +18,6 @@
     "server",
     "nodejs"
   ],
-  "dependencies": {
-    "mocha": "^10.7.3"
-  },
   "author": "Mehran1022",
   "license": "MIT",
   "bugs": {
