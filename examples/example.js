@@ -1,14 +1,16 @@
 const RconPing = require('../lib/RconPing');
 
-const hostname = '127.0.0.1';
-const port = 25575; // default RCON port
-const password = 'your_password';
+const hostname = '0.0.0.0'; // Should be enable-rcon=true in server.properties
+const port = 25575; // rcon.port in server.properties
+const password = 'yourpassword'; // rcon.password in server.properties
 
-const rconPing = new RconPing(hostname, port, password);
-rconPing.connect()
-  .then((result) => {
-    console.log(JSON.stringify(result, null, 2));
-  })
-  .catch((error) => {
-    console.error(`Error validating RCON hostname and port: ${error.message}`);
-  });
+async function main() {
+	const client = new RconPing(hostname, port, password)
+	try {
+		const result = await client.connect()
+		console.log(result)
+	} catch (error) {
+		console.log(error.message)
+	}
+}
+main()
