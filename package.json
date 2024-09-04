@@ -12,7 +12,7 @@
     "@Mehran1022mm:registry": "https://npm.pkg.github.com"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\""
+    "test": "mocha"
   },
   "repository": {
     "type": "git",
@@ -25,6 +25,9 @@
     "server",
     "nodejs"
   ],
+  "dependencies": {
+    "mocha": "^10.7.3"
+  },
   "author": "Mehran1022",
   "license": "MIT",
   "bugs": {
