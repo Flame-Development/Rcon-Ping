@@ -29,7 +29,7 @@ pnpm add rcon-ping
 Here’s an example of how to use the RconPing class:
 
 ```javascript
-const RconPing = require('../lib/RconPing');
+const RconPing = require('rcon-ping');
 
 const hostname = '0.0.0.0'; // Should be enable-rcon=true in server.properties
 const port = 25575; // rcon.port in server.properties
