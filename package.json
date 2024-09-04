@@ -9,7 +9,7 @@
     "test": "test"
   },
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com"
+    "@Mehran1022mm:registry": "https://npm.pkg.github.com"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
