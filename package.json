@@ -1,0 +1,31 @@
+{
+  "name": "rcon-ping",
+  "version": "1.0.0",
+  "description": "A Node.js client for checking if a Minecraft server's RCON is live and exists with the given hostname, port, and password.",
+  "main": "index.js",
+  "directories": {
+    "example": "examples",
+    "lib": "lib",
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mehran1022mm/Rcon-Ping.git"
+  },
+  "keywords": [
+    "minecraft",
+    "rcon",
+    "ping",
+    "server",
+    "nodejs"
+  ],
+  "author": "Mehran1022",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Mehran1022mm/Rcon-Ping/issues"
+  },
+  "homepage": "https://github.com/Mehran1022mm/Rcon-Ping#readme"
+}
