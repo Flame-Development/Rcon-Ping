@@ -1,3 +1,10 @@
+<div align="center">
+	<p>
+		<a href="https://www.npmjs.com/package/rcon-ping"><img src="https://img.shields.io/npm/dt/rcon-ping?color=4B68F6&style=for-the-badge" alt="NPM Downloads" /></a>
+		<a href="https://www.npmjs.com/package/rcon-ping"><img src="https://img.shields.io/npm/v/rcon-ping?color=04DCC6&style=for-the-badge" alt="npm Version" /></a>
+	</p>
+</div>
+
 # RconPing
 
 A Node.js client for checking if a Minecraft server's RCON is live and exists with the given hostname, port, and password.
@@ -11,34 +18,36 @@ Developed by Mehran1022
 - Modular and maintainable code structure
 
 ## Installation
-
-To install the package, use npm:
-
-```bash
+Install with [npm](https://www.npmjs.com/) / [yarn](https://yarnpkg.com) / [pnpm](https://pnpm.js.org/):
+```sh
 npm install rcon-ping
+yarn add rcon-ping
+pnpm add rcon-ping
 ```
 
 ## Usage
 Here’s an example of how to use the RconPing class:
 
 ```javascript
-const RconPing = require('rcon-ping');
+const RconPing = require('../lib/RconPing');
 
-const hostname = '127.0.0.1';
-const port = 25575; // default RCON port
-const password = 'your_password';
+const hostname = '0.0.0.0'; // Should be enable-rcon=true in server.properties
+const port = 25575; // rcon.port in server.properties
+const password = 'yourpassword'; // rcon.password in server.properties
 
-const rconPing = new RconPing(hostname, port, password);
-rconPing.connect()
-  .then((result) => {
-    console.log(JSON.stringify(result, null, 2));
-  })
-  .catch((error) => {
-    console.error(`Error validating RCON hostname and port: ${error.message}`);
-  });
+async function main() {
+	const client = new RconPing(hostname, port, password)
+	try {
+		const result = await client.connect()
+		console.log(result)
+	} catch (error) {
+		console.log(error.message)
+	}
+}
+main()
 ```
 
-## API
+## Methods
 
 `RconPing`
 `constructor(hostname, port, password)`
