@@ -1,6 +1,6 @@
 {
   "name": "rcon-ping",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A Node.js client for checking if a Minecraft server's RCON is live and exists with the given hostname, port, and password.",
   "main": "index.js",
   "directories": {
@@ -23,8 +23,5 @@
   "bugs": {
     "url": "https://github.com/Mehran1022mm/Rcon-Ping/issues"
   },
-  "homepage": "https://github.com/Mehran1022mm/Rcon-Ping#readme",
-  "dependencies": {
-    "minecraft-color": "^1.0.0"
-  }
+  "homepage": "https://github.com/Mehran1022mm/Rcon-Ping#readme"
 }
