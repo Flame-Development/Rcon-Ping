@@ -1,16 +1,14 @@
 const RconPing = require('../lib/RconPing');
+const CommandExecutionExtension = require('./extensions/CommandExecutionExtension');
 
-const hostname = '0.0.0.0'; // Should be enable-rcon=true in server.properties
-const port = 25575; // rcon.port in server.properties
-const password = 'yourpassword'; // rcon.password in server.properties
+// const rcon = new RconPing('localhost', 25575, 'your_password');
+const rcon = new RconPing('localhost', 25575, 'happy');
+const commandExtension = new CommandExecutionExtension('ban me');
 
-async function main() {
-	const client = new RconPing(hostname, port, password)
-	try {
-		const result = await client.connect()
-		console.log(result)
-	} catch (error) {
-		console.log(error.message)
-	}
-}
-main()
+rcon.extensionManager.register(commandExtension);
+
+rcon.connect().then((result) => {
+  console.log(result);
+}).catch((error) => {
+  console.error(error.message);
+});

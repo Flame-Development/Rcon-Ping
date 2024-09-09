@@ -23,5 +23,8 @@
   "bugs": {
     "url": "https://github.com/Mehran1022mm/Rcon-Ping/issues"
   },
-  "homepage": "https://github.com/Mehran1022mm/Rcon-Ping#readme"
+  "homepage": "https://github.com/Mehran1022mm/Rcon-Ping#readme",
+  "dependencies": {
+    "minecraft-color": "^1.0.0"
+  }
 }
